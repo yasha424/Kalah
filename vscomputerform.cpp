@@ -16,7 +16,7 @@ VSComputerForm::~VSComputerForm()
 
 void VSComputerForm::on_easy_button_clicked()
 {
-    game = new Game(2, ui->checkBox->isChecked(), this);
+    game = new Game(1, ui->checkBox->isChecked(), this);
     game->setModal(true);
     game->show();
 }
@@ -24,7 +24,7 @@ void VSComputerForm::on_easy_button_clicked()
 
 void VSComputerForm::on_medium_button_clicked()
 {
-    game = new Game(7, ui->checkBox->isChecked(), this);
+    game = new Game(6, ui->checkBox->isChecked(), this);
     game->setModal(true);
     game->show();
 }
@@ -32,7 +32,7 @@ void VSComputerForm::on_medium_button_clicked()
 
 void VSComputerForm::on_hard_button_clicked()
 {
-    game = new Game(12, ui->checkBox->isChecked(), this);
+    game = new Game(11, ui->checkBox->isChecked(), this);
     game->setModal(true);
     game->show();
 }

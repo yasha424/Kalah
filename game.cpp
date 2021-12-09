@@ -8,14 +8,14 @@ Game::Game(int depth, bool first_move, QWidget *parent): QDialog(parent), ui(new
 	kalah = new Kalah();
 	kalah->setwhoseTurn(!first_move);
 	makeBoard();
-	while (kalah->getWhoseTurn()) {
-		// sleep(1);
+//	while (kalah->getWhoseTurn()) {
+//		// sleep(1);
 
-		int best_move = kalah->bestMove(depth);
+//		int best_move = kalah->bestMove(depth);
 
-		kalah->makeMove(best_move);
-		makeBoard();
-	}
+//		kalah->makeMove(best_move);
+//		makeBoard();
+//	}
 }
 
 Game::~Game() {
@@ -51,9 +51,10 @@ void Game::AIMove() {
 		kalah->makeMove(best_move);
 		makeBoard();
 		if (kalah->gameOver()) {
+//            makeBoard();
 			if (kalah->getPoints(true) > kalah->getPoints(false)) {
 				ui->whose_turn_label->setText("AI Won!");
-			} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+            } else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 				ui->whose_turn_label->setText("You Won!");
 			} else {
 				ui->whose_turn_label->setText("It's a draw");
