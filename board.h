@@ -6,10 +6,10 @@ class Kalah {
 	int **player;
 	// vector<Kalah *> childs;
 	bool whoose_turn;                   // true for computer
-	const int stones_num = 4;
+	int stones_num;
 
 public:
-	Kalah();
+	Kalah(int count_of_stones);
 	Kalah(const Kalah &kalah);
 
 	~Kalah();
@@ -21,8 +21,8 @@ public:
 	bool getWhoseTurn();
 	bool makeMove(int hole_index);
 	bool gameOver();
-	int bestMove(int depth);
-	int minimax(int depth, int alpha, int beta);
+    int bestMove(int depth);
+    int minimax(int depth, int alpha, int beta);
 	int heuristic();
 	int getPoints(bool whose);
 	void changeSides();

@@ -1,21 +1,14 @@
 #include "game.h"
 #include "ui_game.h"
 
-Game::Game(int depth, bool first_move, QWidget *parent): QDialog(parent), ui(new Ui::Game) {
+Game::Game(int depth, bool first_move, int count_of_stones, QWidget *parent): QDialog(parent), ui(
+		new Ui::Game) {
 	ui->setupUi(this);
 	this->depth = depth;
 	this->first_move = first_move;
-	kalah = new Kalah();
+	kalah = new Kalah(count_of_stones);
 	kalah->setwhoseTurn(!first_move);
 	makeBoard();
-//	while (kalah->getWhoseTurn()) {
-//		// sleep(1);
-
-//		int best_move = kalah->bestMove(depth);
-
-//		kalah->makeMove(best_move);
-//		makeBoard();
-//	}
 }
 
 Game::~Game() {
@@ -51,31 +44,27 @@ void Game::AIMove() {
 		kalah->makeMove(best_move);
 		makeBoard();
 		if (kalah->gameOver()) {
-//            makeBoard();
 			if (kalah->getPoints(true) > kalah->getPoints(false)) {
 				ui->whose_turn_label->setText("AI Won!");
-            } else if (kalah->getPoints(true) < kalah->getPoints(false)) {
+			} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 				ui->whose_turn_label->setText("You Won!");
 			} else {
 				ui->whose_turn_label->setText("It's a draw");
 			}
 		}
+
 	}
 }
 
 void Game::on_hole_1_clicked() {
-	if (!kalah->getWhoseTurn()) {
+    if (!kalah->getWhoseTurn()) {
 		kalah->makeMove(0);
 		makeBoard();
 	}
-// if (kalah->getWhoseTurn()){
-// sleep(1);
-// AIMove();
-// }
 	if (kalah->gameOver()) {
 		if (kalah->getPoints(true) > kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("AI Won!");
-		} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+		} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("You Won!");
 		} else {
 			ui->whose_turn_label->setText("It's a draw");
@@ -84,18 +73,15 @@ void Game::on_hole_1_clicked() {
 }
 
 void Game::on_hole_2_clicked() {
-	if (!kalah->getWhoseTurn()) {
+
+    if (!kalah->getWhoseTurn()) {
 		kalah->makeMove(1);
 		makeBoard();
 	}
-// if (kalah->getWhoseTurn()){
-//// sleep(1);
-// AIMove();
-// }
 	if (kalah->gameOver()) {
 		if (kalah->getPoints(true) > kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("AI Won!");
-		} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+		} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("You Won!");
 		} else {
 			ui->whose_turn_label->setText("It's a draw");
@@ -104,18 +90,15 @@ void Game::on_hole_2_clicked() {
 }
 
 void Game::on_hole_3_clicked() {
-	if (!kalah->getWhoseTurn()) {
+
+    if (!kalah->getWhoseTurn()) {
 		kalah->makeMove(2);
 		makeBoard();
 	}
-// if (kalah->getWhoseTurn()){
-//// sleep(1);
-// AIMove();
-// }
 	if (kalah->gameOver()) {
 		if (kalah->getPoints(true) > kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("AI Won!");
-		} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+		} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("You Won!");
 		} else {
 			ui->whose_turn_label->setText("It's a draw");
@@ -124,18 +107,15 @@ void Game::on_hole_3_clicked() {
 }
 
 void Game::on_hole_4_clicked() {
-	if (!kalah->getWhoseTurn()) {
+
+    if (!kalah->getWhoseTurn()) {
 		kalah->makeMove(3);
 		makeBoard();
 	}
-// if (kalah->getWhoseTurn()){
-//// sleep(1);
-// AIMove();
-// }
 	if (kalah->gameOver()) {
 		if (kalah->getPoints(true) > kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("AI Won!");
-		} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+		} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("You Won!");
 		} else {
 			ui->whose_turn_label->setText("It's a draw");
@@ -144,18 +124,15 @@ void Game::on_hole_4_clicked() {
 }
 
 void Game::on_hole_5_clicked() {
-	if (!kalah->getWhoseTurn()) {
+
+    if (!kalah->getWhoseTurn()) {
 		kalah->makeMove(4);
 		makeBoard();
 	}
-// if (kalah->getWhoseTurn()){
-//// sleep(1);
-// AIMove();
-// }
 	if (kalah->gameOver()) {
 		if (kalah->getPoints(true) > kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("AI Won!");
-		} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+		} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("You Won!");
 		} else {
 			ui->whose_turn_label->setText("It's a draw");
@@ -164,18 +141,14 @@ void Game::on_hole_5_clicked() {
 }
 
 void Game::on_hole_6_clicked() {
-	if (!kalah->getWhoseTurn()) {
+    if (!kalah->getWhoseTurn()) {
 		kalah->makeMove(5);
 		makeBoard();
 	}
-// if (kalah->getWhoseTurn()){
-//// sleep(1);
-// AIMove();
-// }
 	if (kalah->gameOver()) {
 		if (kalah->getPoints(true) > kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("AI Won!");
-		} else if (kalah->getPoints(true) > kalah->getPoints(false)) {
+		} else if (kalah->getPoints(true) < kalah->getPoints(false)) {
 			ui->whose_turn_label->setText("You Won!");
 		} else {
 			ui->whose_turn_label->setText("It's a draw");
@@ -186,5 +159,7 @@ void Game::on_hole_6_clicked() {
 void Game::on_pushButton_clicked() {
 	if (kalah->getWhoseTurn() && !kalah->gameOver()) {
 		AIMove();
-	}
+    } else if (!kalah->getWhoseTurn() && !kalah->gameOver()) {
+        ui->whose_turn_label->setText("Your turn!");
+    }
 }

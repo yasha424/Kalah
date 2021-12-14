@@ -6,24 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
+    <width>690</width>
     <height>400</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>700</width>
+    <width>690</width>
     <height>400</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>700</width>
+    <width>690</width>
     <height>400</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -38,7 +41,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="hole_12">
+       <widget class="QLabel" name="hole_12">
         <property name="minimumSize">
          <size>
           <width>60</width>
@@ -57,17 +60,21 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="hole_11">
+       <widget class="QLabel" name="hole_11">
         <property name="minimumSize">
          <size>
           <width>60</width>
@@ -86,17 +93,21 @@ border-radius: 8px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="hole_10">
+       <widget class="QLabel" name="hole_10">
         <property name="minimumSize">
          <size>
           <width>60</width>
@@ -115,17 +126,21 @@ border-radius: 8px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="hole_9">
+       <widget class="QLabel" name="hole_9">
         <property name="minimumSize">
          <size>
           <width>60</width>
@@ -144,17 +159,21 @@ border-radius: 8px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="hole_8">
+       <widget class="QLabel" name="hole_8">
         <property name="minimumSize">
          <size>
           <width>60</width>
@@ -173,17 +192,21 @@ border-radius: 8px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="hole_7">
+       <widget class="QLabel" name="hole_7">
         <property name="minimumSize">
          <size>
           <width>60</width>
@@ -202,12 +225,16 @@ border-radius: 8px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -238,7 +265,7 @@ border-radius: 8px;</string>
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
 border-radius: 8px;
 </string>
@@ -271,9 +298,10 @@ border-radius: 8px;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
          <string>PushButton</string>
@@ -303,9 +331,10 @@ border-radius: 8px;</string>
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
          <string>PushButton</string>
@@ -335,9 +364,10 @@ border-radius: 8px;</string>
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
          <string>PushButton</string>
@@ -367,9 +397,10 @@ border-radius: 8px;</string>
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
          <string>PushButton</string>
@@ -399,9 +430,10 @@ border-radius: 8px;</string>
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.670157, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
         </property>
         <property name="text">
          <string>PushButton</string>
@@ -427,9 +459,10 @@ border-radius: 8px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.528796, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -453,9 +486,10 @@ border-radius: 8px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.219895, y1:0, x2:0.921466, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.659686 rgba(235, 148, 61, 255), stop:1 rgba(0, 0, 0, 255));
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.345549, y1:0.130682, x2:0.528796, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.78534 rgba(235, 148, 61, 255), stop:1 rgba(89, 48, 18, 255));
 color: black;
-border-radius: 8px;</string>
+border-radius: 8px;
+</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -469,7 +503,7 @@ border-radius: 8px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
+     <width>690</width>
      <height>400</height>
     </rect>
    </property>
@@ -483,7 +517,7 @@ border-radius: 8px;</string>
   <widget class="QLabel" name="whose_turn_label">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>195</x>
      <y>20</y>
      <width>300</width>
      <height>60</height>
@@ -493,6 +527,9 @@ border-radius: 8px;</string>
     <font>
      <pointsize>36</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -505,13 +542,36 @@ border-radius: 8px;</string>
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>40</y>
+     <y>35</y>
      <width>80</width>
-     <height>24</height>
+     <height>35</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+background-color: rgba(255, 255, 255, 51);
+border-radius: 8px;</string>
    </property>
    <property name="text">
     <string>AI turn</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
    </property>
   </widget>
   <zorder>label</zorder>

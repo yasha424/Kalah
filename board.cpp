@@ -1,6 +1,7 @@
 #include "board.h"
 
-Kalah::Kalah() {
+Kalah::Kalah(int count_of_stones) {
+	stones_num = count_of_stones;
 	player = new int *[2];
 	for (size_t i = 0; i < 2; i++) {
 		player[i] = new int[7];
@@ -25,7 +26,6 @@ Kalah::Kalah(const Kalah &kalah) {
 }
 
 Kalah::~Kalah() {
-	// cout << "~" << endl;
 	for (size_t i = 0; i < 2; i++) {
 		delete[] player[i];
 	}
@@ -100,13 +100,6 @@ bool Kalah::gameOver() {
 		player[!whoose_turn][6] += player[!whoose_turn][i];
 		player[!whoose_turn][i] = 0;
 	}
-	// if (player[0][6] < player[1][6]) {
-	// cout << "AI won!" << endl;
-	// } else if (player[0][6] > player[1][6]) {
-	// cout << "You won!" << endl;
-	// } else {
-	// cout << "it's a draw" << endl;
-	// }
 	return true;
 }
 
@@ -117,38 +110,23 @@ int Kalah::bestMove(int depth) {
 		Kalah *current = new Kalah(*this);
 		int score = -INT_MAX;
 
-		// if (!is_first) {
 		if (current->makeMove(i)) {
-			// cout << i << " " << "made move" << endl;
-			// current->print();
-			// cout << endl << endl;
-			// childs.push_back(current);
-			// int alpha, beta;
 			score = current->minimax(depth - 1, -INT_MAX, INT_MAX);
 			if (best_score <= score) {
 				best_score = score;
 				best_move = i;
 			}
 		}
-		// }
 		delete current;
 	}
 	return best_move;
 }
 
 int Kalah::minimax(int depth, int alpha, int beta) {
-	// int score = 0;
-
 	int best_score = 0;
 
 	if (gameOver()) {
-		if (getPoints(true) > getPoints(false)) {
-			return 100;
-		} else if (getPoints(true) > getPoints(false)) {
-			return -100;
-		} else {
-			return 0;
-		}
+        return heuristic();
 	} else if (depth > 0) {
 		if (whoose_turn) {
 			best_score = -INT_MAX;

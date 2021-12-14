@@ -2,8 +2,8 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11
-
+CONFIG += c++2a
+CXXFLAGS += -O2
 QMAKE_CXXFLAGS += -O2
 QMAKE_CXXFLAGS += -std=c++2a
 
@@ -36,7 +36,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     background.jpeg \
-    irobot.jpg
+    irobot.jpg \
+    move_sound.mp3 \
+    move_sound.wav
 
 RESOURCES += \
     background.jpeg \
